@@ -16,7 +16,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo `date` > /tmp/date.txt
+      - run: echo `date` > date.txt
       - run: git config --local user.name  ${{ github.actor }}
       - run: git add .
       - run: git commit -m "new date"
