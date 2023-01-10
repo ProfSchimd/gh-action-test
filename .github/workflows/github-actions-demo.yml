@@ -16,8 +16,13 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo `date` > date.txt
-      - run: git config --local user.name  ${{ github.actor }}
-      - run: git add .
-      - run: git commit -m "new date"
-      - run: git push
+      - name: Print info on file
+      - run: |
+          echo `date` > info.txt
+          echo "${{ github.actor }}" >> info.txt
+      - name: Push files
+      - run: |
+          git config --local user.name  ${{ github.actor }}
+          git add .
+          git commit -m "Updated info.txt"
+          git push
