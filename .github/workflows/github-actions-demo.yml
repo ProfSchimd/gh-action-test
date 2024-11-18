@@ -16,7 +16,7 @@ jobs:
           python -m pyquiz.pyquiz --input ../../test.json --number 1 --render html --seed ${{ github.repository }}
           mv text.html ../../../domanda.html
           cd ../..
-          rm -r quiz_app
+          rm -r quiz-app
       - name: Push files
         run: |
           git config --local user.name  ${{ github.actor }}
