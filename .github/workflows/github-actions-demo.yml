@@ -11,9 +11,9 @@ jobs:
       - name: Retrieve and run quiz generator
         run: |
           cd .gen
-          git clone https://github.com/ProfSchimd/quiz-python.git
-          cd quiz-python
-          python3 src/py-quiz.py --input ../test.json --number 1 --render html --seed ${{ github.repository }}
+          git clone https://github.com/ProfSchimd/quiz-app.git
+          cd quiz_app/pyquiz
+          python -m pyquiz.pyquiz src/py-quiz.py --input ../test.json --number 1 --render html --seed ${{ github.repository }}
           mv text.html ../../domanda.html
           cd ..
           rm -r quiz-python
