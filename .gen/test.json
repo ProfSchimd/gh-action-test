@@ -9,7 +9,7 @@
         ],
         "sub-questions": [
             {
-                "question": "Scrivere un metodo che accetta in ingresso un array di <code>String</code> e che restituisce {{0}}.",
+                "question": "!!PRROVA!! Scrivere un metodo che accetta in ingresso un array di <code>String</code> e che restituisce {{0}}.",
                 "variants": [
                     [
                         "la lunghezza della stringa <b>più lunga</b> presente nell'array",
