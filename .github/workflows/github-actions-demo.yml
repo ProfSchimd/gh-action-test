@@ -13,9 +13,9 @@ jobs:
           cd .gen
           git clone https://github.com/ProfSchimd/quiz-app.git
           cd quiz-app/quiz_app
-          python -m pyquiz.pyquiz --input ../test.json --number 1 --render html --seed ${{ github.repository }}
-          mv text.html ../../domanda.html
-          cd ..
+          python -m pyquiz.pyquiz --input ../../test.json --number 1 --render html --seed ${{ github.repository }}
+          mv text.html ../../../domanda.html
+          cd ../..
           rm -r quiz-python
       - name: Push files
         run: |
