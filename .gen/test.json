@@ -1,0 +1,39 @@
+[
+
+    {
+        "id": "001",
+        "type": "exercise",
+        "weight": 10,
+        "text": "Utilizzando il linguaggio Java svolgere i seguenti punti",
+        "text-variants": [
+        ],
+        "sub-questions": [
+            {
+                "question": "Scrivere un metodo che accetta in ingresso un array di <code>String</code> e che restituisce {{0}}.",
+                "variants": [
+                    [
+                        "la lunghezza della stringa <b>più lunga</b> presente nell'array",
+                        "la lunghezza della stringa <b>più corta</b> presente nell'array",
+                        "il numero di stringhe con lunghezza maggiore di 4",
+                        "il numero di stringhe con lunghezza minore di 4"
+                        
+                    ]
+                ]
+            },
+
+            {
+                "question": "Se qualcuna delle stringhe nell'array è un riferimento <code>null</code>, il metodo deve . Tuttavia se tutte le stringhe sono <code>null</code>, il metodo restituisce -1.",
+                "variants": [
+                    ["ignorare quella stringa", "considerarle come di lunghezza 0"]
+                ]
+            },
+
+            {
+                "question": "Scrivere un metodo <code>main</code> che esegua il test del metodo sopra sviluppato. Il metodo deve verificare il corretto funzionamento dei seguenti casi: tutte stringhe diverse da <code>null</code>, alcune (ma non tutte) stringhe <code>null</code> e tutte stringhe <code>null</code>.",
+                "variants": [
+
+                ]
+            }
+        ]
+    }
+]
