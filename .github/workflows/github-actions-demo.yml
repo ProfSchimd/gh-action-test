@@ -12,7 +12,7 @@ jobs:
         run: |
           cd .gen
           git clone https://github.com/ProfSchimd/quiz-app.git
-          cd quiz_app/pyquiz
+          cd quiz-app/quiz_app
           python -m pyquiz.pyquiz src/py-quiz.py --input ../test.json --number 1 --render html --seed ${{ github.repository }}
           mv text.html ../../domanda.html
           cd ..
